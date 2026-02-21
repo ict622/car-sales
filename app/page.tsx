@@ -54,12 +54,37 @@ const carsForSale: Car[] = [
 // 3. The main page component
 export default function HomePage() {
   return (
-    <main className="bg-gray-100 min-h-screen">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <header className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900">
-            Premium Cars for Sale
+    <main className="bg-gray-100">
+      {/* Hero Section */}
+      <section
+        className="relative h-screen bg-cover bg-center flex items-center justify-center text-white"
+        style={{
+          backgroundImage: "url('https://images.pexels.com/photos/241316/pexels-photo-241316.jpeg')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="relative z-10 text-center px-4">
+          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight">
+            Find Your Drive
           </h1>
+          <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
+            Experience the pinnacle of automotive excellence. Browse our curated selection of premium vehicles.
+          </p>
+          <a
+            href="#listings"
+            className="mt-8 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300"
+          >
+            View Collection
+          </a>
+        </div>
+      </section>
+
+      {/* Car Listings Section */}
+      <section id="listings" className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <header className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
+            Premium Cars for Sale
+          </h2>
           <p className="mt-4 text-lg text-gray-600">
             Find your next dream car from our exclusive collection.
           </p>
@@ -98,7 +123,7 @@ export default function HomePage() {
             </div>
           ))}
         </div>
-      </div>
+      </section>
     </main>
   );
 }
