@@ -83,14 +83,16 @@ export default function HomePage() {
       <main>
         {/* Hero Section */}
         <section className="relative h-screen flex items-center justify-center text-white">
-          <Image
-            src="https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg"
-            alt="A classic white sports car"
-            fill
-            style={{ objectFit: 'cover' }}
-            className="-z-10"
-            priority
-          />
+          <div className="absolute inset-0">
+            <Image
+              src="https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg"
+              alt="A classic white sports car"
+              layout="fill"
+              objectFit="cover"
+              className="z-0"
+              priority
+            />
+          </div>
           <div className="absolute inset-0 bg-black bg-opacity-60"></div>
           <div className="relative z-10 text-center px-4">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">
