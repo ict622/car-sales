@@ -79,16 +79,33 @@ const carsForSale: Car[] = [
 export default function HomePage() {
   return (
     <div className="bg-gray-100">
+      <Header />
       <main>
         {/* Hero Section */}
-        <section className="relative h-screen">
+        <section className="relative h-screen flex items-center justify-center text-white">
           <Image
             src="https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg"
             alt="A classic white sports car"
             layout="fill"
             objectFit="cover"
             priority
+            className="-z-10"
           />
+          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+          <div className="relative z-10 text-center px-4">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight drop-shadow-lg">
+              Artistry in Motion
+            </h1>
+            <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto drop-shadow-md">
+              Discover a curated collection where engineering meets emotion. Your next chapter awaits.
+            </p>
+            <a
+              href="#listings"
+              className="mt-8 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 shadow-xl"
+            >
+              Explore the Collection
+            </a>
+          </div>
         </section>
 
         {/* Car Listings Section */}
