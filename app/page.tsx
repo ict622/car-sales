@@ -91,7 +91,7 @@ export default function HomePage() {
             priority
             className="-z-10"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+          <div className="absolute inset-0 bg-gray-800 bg-opacity-60"></div>
           <div className="relative z-10 text-center px-4">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight drop-shadow-lg">
               Artistry in Motion
