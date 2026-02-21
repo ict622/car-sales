@@ -9,7 +9,7 @@ const Header = () => (
       </div>
       <div className="hidden md:flex space-x-6">
         <a href="#listings" className="hover:text-blue-300">Collection</a>
-        <a href="#" className="hover:text-blue-300">About</a>
+        <a href="/management" className="hover:text-blue-300">Management</a>
         <a href="#" className="hover:text-blue-300">Contact</a>
       </div>
     </nav>
