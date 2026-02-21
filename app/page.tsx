@@ -19,7 +19,7 @@ const carsForSale: Car[] = [
     model: '911 Carrera',
     year: 2023,
     price: 115000,
-    imageUrl: 'https://placehold.co/600x400/000000/FFFFFF/png?text=Porsche+911',
+    imageUrl: 'https://images.unsplash.com/photo-1616421233882-d3c563b46960?q=80&w=800',
     imageAlt: 'A sleek, black Porsche 911 sports car.',
   },
   {
@@ -28,7 +28,7 @@ const carsForSale: Car[] = [
     model: 'Mustang GT',
     year: 2024,
     price: 45000,
-    imageUrl: 'https://placehold.co/600x400/3455DB/FFFFFF/png?text=Ford+Mustang',
+    imageUrl: 'https://images.unsplash.com/photo-1628551528242-d6b39a3f5a2f?q=80&w=800',
     imageAlt: 'A vibrant blue Ford Mustang GT, an American muscle car.',
   },
   {
@@ -37,7 +37,7 @@ const carsForSale: Car[] = [
     model: 'Supra',
     year: 2022,
     price: 58000,
-    imageUrl: 'https://placehold.co/600x400/FF0000/FFFFFF/png?text=Toyota+Supra',
+    imageUrl: 'https://images.unsplash.com/photo-1633596683414-9b04a2599426?q=80&w=800',
     imageAlt: 'A sporty, red Toyota Supra with an aerodynamic design.',
   },
   {
@@ -46,7 +46,7 @@ const carsForSale: Car[] = [
     model: 'Civic Type R',
     year: 2023,
     price: 43000,
-    imageUrl: 'https://placehold.co/600x400/CCCCCC/000000/png?text=Civic+Type+R',
+    imageUrl: 'https://images.unsplash.com/photo-1678846399434-58a5b3dc2f99?q=80&w=800',
     imageAlt: 'A modern, white Honda Civic Type R hot hatchback.',
   },
 ];
