@@ -130,17 +130,19 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="p-5 flex-grow flex flex-col">
-                  <h3 className="text-lg font-bold text-gray-800">
-                    {car.year} {car.make} {car.model}
-                  </h3>
-                  <div className="mt-4 flex-grow">
-                    <span className="text-2xl font-bold text-gray-900">
+                  <div>
+                    <h3 className="text-lg font-bold text-gray-800 leading-tight">
+                      {car.year} {car.make} {car.model}
+                    </h3>
+                  </div>
+                  <div className="mt-4 flex-grow flex items-end">
+                    <p className="text-2xl font-bold text-gray-900">
                       {new Intl.NumberFormat('en-US', {
                         style: 'currency',
                         currency: 'USD',
                         minimumFractionDigits: 0,
                       }).format(car.price)}
-                    </span>
+                    </p>
                   </div>
                 </div>
               </div>
