@@ -82,8 +82,16 @@ export default function HomePage() {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="relative h-screen bg-hero-image bg-cover bg-center flex items-center justify-center text-white">
-          <div className="absolute inset-0 bg-transparent"></div>
+        <section className="relative h-screen flex items-center justify-center text-white">
+          <Image
+            src="https://images.pexels.com/photos/241316/pexels-photo-241316.jpeg"
+            alt="A luxury car on a scenic road"
+            fill
+            style={{ objectFit: 'cover' }}
+            className="-z-10"
+            priority
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-60"></div>
           <div className="relative z-10 text-center px-4">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">
               Find Your Drive
