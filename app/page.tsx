@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 // Helper components for structure (still in one file as requested)
 const Header = () => (
-  <header className="w-full z-20 bg-gray-800 text-white shadow-md">
+  <header className="absolute top-0 left-0 w-full z-20 bg-transparent text-white">
     <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
       <div className="text-2xl font-bold">
         <a href="#">AutoLux</a>
@@ -81,6 +81,33 @@ export default function HomePage() {
     <div className="bg-gray-100">
       <Header />
       <main>
+        {/* Hero Section */}
+        <section className="relative h-screen flex items-center justify-center text-white">
+          <Image
+            src="https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg"
+            alt="A classic white sports car"
+            fill
+            style={{ objectFit: 'cover' }}
+            className="-z-10"
+            priority
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+          <div className="relative z-10 text-center px-4">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">
+              Find Your Drive
+            </h1>
+            <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
+              Experience the pinnacle of automotive excellence. Browse our curated selection of premium vehicles.
+            </p>
+            <a
+              href="#listings"
+              className="mt-8 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300"
+            >
+              View Collection
+            </a>
+          </div>
+        </section>
+
         {/* Car Listings Section */}
         <section id="listings" className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
           <header className="text-center mb-10 md:mb-16">
