@@ -85,7 +85,7 @@ export default function HomePage() {
         <section
           className="relative h-screen bg-cover bg-center flex items-center justify-center text-white"
           style={{
-            backgroundImage: "url('https://images.pexels.com/photos/241316/pexels-photo-241316.jpeg')",
+            backgroundImage: "url(https://images.pexels.com/photos/241316/pexels-photo-241316.jpeg)",
           }}
         >
           <div className="absolute inset-0 bg-black bg-opacity-60"></div>
